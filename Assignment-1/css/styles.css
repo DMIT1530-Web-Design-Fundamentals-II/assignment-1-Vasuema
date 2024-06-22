@@ -1,0 +1,195 @@
+body {
+  background-color: #e8f4f9;
+}
+
+/* -------------------- header ---------------------- */
+header {
+  background-color: #1e426e;
+  font-size: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: #f9f9f9;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  justify-content: end;
+  gap: 0.5em;
+  list-style: " | ";
+  color: #ffff;
+  padding: 1rem;
+  margin-right: 5rem;
+}
+header li {
+  padding: 0.5rem;
+}
+
+header a:hover {
+  background-color: green;
+}
+
+/* -------------------- nav ---------------------- */
+nav {
+  background-color: #ffff;
+}
+h1 {
+  font-size: 4rem;
+  padding: 2rem;
+  color: #1e426e;
+  text-transform: uppercase;
+}
+
+.nav-line {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.nav-line ul {
+  display: flex;
+  text-transform: uppercase;
+  gap: 4rem;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.nav-line a {
+  text-decoration: none;
+}
+
+nav img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+nav a:hover {
+  color: green;
+}
+
+/* -------------------- main ---------------------- */
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.main-box,
+h2 {
+  text-transform: none;
+}
+
+.all-link-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  background-color: #e8f4f9;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.link-box {
+  background-color: #ffff;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.link-box a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #ffff;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+
+.main-box,
+.main-box2 {
+  margin: 1rem;
+}
+
+.main-box {
+  background-color: #ffff;
+  border: #e8f4f9;
+  border-style: solid;
+  border-width: 0.1rem;
+  text-align: center;
+}
+
+.main-box2 {
+  background-color: #e8f4f9;
+}
+.main-box2 h2,
+.main-box2 p,
+.main-box2 h3,
+.main-box h2,
+.main-box p,
+.main-box h3 {
+  padding: 1.5rem;
+  text-align: center;
+}
+.button1 {
+  margin-left: 19rem;
+  margin-right: 19rem;
+}
+
+.button1,
+.button2 {
+  background-color: #1e426e;
+  color: #f9f9f9;
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  justify-items: center;
+}
+
+.button2 {
+  margin: 7rem;
+  background-color: #1e426e;
+}
+.button2 a,
+.button1 a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+/* -------------------- footer ---------------------- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem 2rem 4rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  color: #1e426e;
+  gap: 0.5em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: green;
+}
