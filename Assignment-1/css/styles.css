@@ -146,8 +146,8 @@ main {
 }
 
 .main-box h2,
-.main-box2 h2{
-    text-transform: capitalize;
+.main-box2 h2 {
+  text-transform: capitalize;
 }
 .button1 {
   margin-left: 19rem;
@@ -202,8 +202,74 @@ main {
   text-decoration: none;
 }
 
+.info-home h2 {
+  text-align: center;
+  padding: 2rem;
+}
 
+.info-box {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
 
+.info-box {
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-box img {
+  width: 98%;
+  height: 20rem;
+}
+
+.info-text1 {
+  padding-left: 1rem;
+}
+.info-text2 {
+  padding-right: 1rem;
+}
+
+.help-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 4rem;
+}
+
+.help-section h2 {
+  padding-bottom: 2rem;
+}
+
+.help-boxes {
+  background-color: #f5f5f5;
+  margin: 2rem auto 0 auto;
+  max-width: 62%;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.help-box1,
+.help-box2,
+.help-box3 {
+  background-color: #ffff;
+  padding: 2rem 6rem 2rem 6rem;
+  width: 100%;
+}
+
+.help-box2 {
+  margin: 0 3rem 0 3rem;
+}
+
+.help-boxes a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.help-boxes p {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
 /* -------------------- footer ---------------------- */
 
 footer {
@@ -211,7 +277,6 @@ footer {
   justify-content: space-between;
   padding: 3rem 4rem 2rem 4rem;
   font-size: 2rem;
-  margin-top: 1rem;
   background-color: #e8f4f9;
 }
 
