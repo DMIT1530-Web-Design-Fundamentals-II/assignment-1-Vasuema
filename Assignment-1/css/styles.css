@@ -1,7 +1,11 @@
 /* -------------------- header ---------------------- */
 header {
   background-color: #1e426e;
-  font-size: 2rem;
+}
+
+.header-line {
+  display: flex;
+  justify-content: end;
 }
 header a {
   text-decoration: none;
@@ -10,16 +14,18 @@ header a {
 }
 
 header ul {
-  display: flex;
-  justify-content: end;
-  gap: 0.5em;
+  font-size: 2rem;
+  max-width: 81%;
+  gap: 0.5rem;
   list-style: " | ";
   color: #ffff;
   padding: 1rem;
-  margin-right: 5rem;
+  font-size: 2rem;
+  max-width: 100%;
+  margin-right: 20rem;
 }
 header li {
-  padding: 0.5rem;
+  padding-right: 1rem;
 }
 
 header a:hover {
@@ -32,7 +38,7 @@ nav {
 }
 h1 {
   font-size: 4rem;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
   color: #1e426e;
   text-transform: uppercase;
 }
@@ -40,15 +46,15 @@ h1 {
 .nav-line {
   display: flex;
   justify-content: space-between;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  max-width: 80%;
+  margin-left: 15rem;
 }
 
 .nav-line ul {
   display: flex;
   text-transform: uppercase;
   gap: 4rem;
-  padding: 3rem;
+  padding: 3rem 0 3rem 0;
   font-size: 2rem;
 }
 
@@ -61,6 +67,7 @@ nav img {
   height: auto;
   margin: 0;
   padding: 0;
+  overflow-x: visible;
 }
 
 nav a:hover {
@@ -76,30 +83,27 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
-
-/* .main-box,
-h2 {
-  text-transform: none;
-} */
+.link-boxes-background {
+  background-color: #e8f4f9;
+}
 
 .all-link-boxes {
   display: flex;
-  justify-content: space-evenly;
+  gap: 2.5rem;
   font-size: 2rem;
-  background-color: #e8f4f9;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 81%;
+  margin-left: 15rem;
 }
 
-.link-box {
+.link-box,
+.link-box1,
+.link-box6 {
   background-color: #ffff;
-  margin: 2rem;
   padding: 2rem;
   text-align: center;
-}
-
-.link-box a {
   text-decoration: none;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 main {
@@ -108,10 +112,9 @@ main {
 
 .main-body {
   display: grid;
-  grid-template-columns: 1.75fr 1fr;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  grid-template-columns: 60% 40%;
   font-size: 2rem;
+  justify-content: center;
 }
 
 .main-box,
@@ -128,12 +131,14 @@ main {
   text-align: center;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-left: 15rem;
 }
 
 .main-box2 {
   background-color: #e8f4f9;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-right: 15rem;
 }
 .main-box2 h2,
 .main-box2 p,
@@ -176,32 +181,6 @@ main {
 }
 /* -------------------- main - your-home ---------------------- */
 
-.all-home-boxes {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 3rem;
-  margin: 3rem;
-  justify-items: center;
-  margin-left: 30rem;
-  margin-right: 30rem;
-}
-.home-box img {
-  max-width: 30rem;
-  display: flex;
-}
-
-.box-link {
-  background-color: #1e426e;
-  font-size: 2rem;
-  max-width: 28rem;
-  padding: 1rem;
-}
-
-.box-link a {
-  color: #f9f9f9;
-  text-decoration: none;
-}
-
 .info-home h2 {
   text-align: center;
   padding: 2rem;
@@ -211,8 +190,8 @@ main {
   font-size: 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-left: 30rem;
-  margin-right: 30rem;
+  margin-left: 18rem;
+  margin-right: 16rem;
 }
 
 .info-box {
@@ -270,6 +249,82 @@ main {
   text-transform: uppercase;
   padding-bottom: 2rem;
 }
+
+/* ---------------- main - community -------------------- */
+
+.community,
+.community-all-boxes {
+  font-size: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.community h2 {
+  text-align: center;
+  padding: 5rem 0 4rem 0;
+}
+
+.community p:nth-child(2) {
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.community p:nth-child(3) {
+  padding-bottom: 2rem;
+}
+
+.community-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-link {
+  background-color: #1e426e;
+  color: #ffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.community-all-boxes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 2rem;
+}
+
+.community-all-boxes img {
+  height: 70%;
+}
+
+.house-banner {
+  background-image: url(../img/building-stronger.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.house-banner-box {
+  font-size: 2rem;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  max-width: 35%;
+  opacity: 0.9;
+  margin-right: 15rem;
+}
+
+.house-banner-box h2 {
+  text-align: center;
+}
+
+.house-banner-box h2,
+.house-banner-box p,
+.house-banner-link {
+  padding: 1.25rem;
+}
+
 /* -------------------- footer ---------------------- */
 
 footer {
@@ -278,6 +333,8 @@ footer {
   padding: 3rem 4rem 2rem 4rem;
   font-size: 2rem;
   background-color: #e8f4f9;
+  padding-left: 18rem;
+  padding-right: 18rem;
 }
 
 footer ul {
@@ -293,4 +350,20 @@ footer a {
 
 footer a:hover {
   color: green;
+}
+
+/* Mobile View */
+@media (max-width: 759px) {
+  .flex-all {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium View */
+@media (min-width: 760px) and (max-width: 1199px) {
+  .flex-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
