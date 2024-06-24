@@ -1,6 +1,7 @@
 /* -------------------- header ---------------------- */
 header {
   background-color: #1e426e;
+  width: 100%;
 }
 
 .header-line {
@@ -15,14 +16,14 @@ header a {
 
 header ul {
   font-size: 2rem;
-  max-width: 81%;
+  max-width: 80%;
   gap: 0.5rem;
   list-style: " | ";
   color: #ffff;
   padding: 1rem;
   font-size: 2rem;
   max-width: 100%;
-  margin-right: 20rem;
+  margin-right: 12rem;
 }
 header li {
   padding-right: 1rem;
@@ -111,10 +112,8 @@ main {
 }
 
 .main-body {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  font-size: 2rem;
-  justify-content: center;
+  justify-tracks: center;
+  margin: 2rem 15rem 2rem 15rem;
 }
 
 .main-box,
@@ -131,14 +130,14 @@ main {
   text-align: center;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
 }
 
 .main-box2 {
   background-color: #e8f4f9;
-  margin-left: 1rem;
+  /* margin-left: 1rem;
   margin-right: 1rem;
-  margin-right: 15rem;
+  margin-right: 10rem; */
 }
 .main-box2 h2,
 .main-box2 p,
@@ -354,16 +353,32 @@ footer a:hover {
 
 /* Mobile View */
 @media (max-width: 759px) {
-  .flex-all {
+  .main-body {
     display: grid;
     grid-template-columns: 1fr;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
 /* Medium View */
 @media (min-width: 760px) and (max-width: 1199px) {
-  .flex-all {
+  .main-body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr;
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
+
+/* Largest View */
+@media (min-width: 1200px) {
+  .main-body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 1rem;
   }
 }
