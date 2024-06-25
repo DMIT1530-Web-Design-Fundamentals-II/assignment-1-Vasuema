@@ -450,6 +450,14 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .button1,
+  .button2 {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+    text-decoration: none;
+  }
+
   footer ul {
     display: flex;
     flex-wrap: wrap;
