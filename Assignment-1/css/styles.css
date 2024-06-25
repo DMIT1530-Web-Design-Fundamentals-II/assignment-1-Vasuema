@@ -150,6 +150,12 @@ main {
   text-align: center;
   padding: 2rem;
 }
+
+.your-home-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-box {
   font-size: 2rem;
 }
@@ -225,11 +231,6 @@ main {
   padding-bottom: 2rem;
 }
 
-.community-box {
-  display: flex;
-  flex-direction: column;
-}
-
 .community-link {
   background-color: #1e426e;
   color: #ffff;
@@ -240,19 +241,8 @@ main {
 .house-banner {
   background-image: url(../img/building-stronger.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   padding: 3rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.house-banner-box {
-  font-size: 2rem;
-  background-color: #f9f9f9;
-  padding: 2rem;
-  max-width: 35%;
-  opacity: 0.9;
-  margin-right: 15rem;
 }
 
 .house-banner-box h2 {
@@ -341,11 +331,11 @@ footer a:hover {
     flex-wrap: wrap;
   }
 
-  .community-all-boxes {
+  .your-home-all-boxes {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     gap: 2rem;
-    max-width: 95%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -390,6 +380,34 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
+  }
+
+  /* ----------------------- */
+  .community-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .community-all-boxes {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .all-of-community {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .house-banner-box {
+    font-size: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    max-width: 80%;
+    opacity: 0.9;
+    margin-left: calc(10% / 2);
+    margin-right: auto;
   }
 }
 
@@ -437,7 +455,7 @@ footer a:hover {
     flex-wrap: wrap;
   }
 
-  .community-all-boxes {
+  .your-home-all-boxes {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 2rem;
@@ -468,6 +486,41 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
+  }
+
+  .community-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .community-box img,
+  .community-box a {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .community-box img {
+    min-height: 70%;
+  }
+  .community-all-boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .all-of-community {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .house-banner-box {
+    font-size: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    max-width: 80%;
+    opacity: 0.9;
+    margin-left: calc(30% / 2);
+    margin-right: auto;
   }
 }
 
@@ -527,7 +580,7 @@ footer a:hover {
     width: 60%;
     margin: 2rem auto 2rem auto;
   }
-  .community-all-boxes {
+  .your-home-all-boxes {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 2rem;
@@ -553,5 +606,34 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
+  }
+  /* ----------------------- */
+  .community-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .community-box img {
+    max-height: 20rem;
+  }
+  .community-all-boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .all-of-community {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .house-banner-box {
+    font-size: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    max-width: 40%;
+    opacity: 0.9;
+    margin-left: calc(100% / 2);
+    margin-right: auto;
   }
 }
